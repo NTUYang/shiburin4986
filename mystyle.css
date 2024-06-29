@@ -1,0 +1,56 @@
+body {
+  background-color: #cae6f1;
+}
+
+h1 {
+  font-family: "Arial", serif;
+  font-weight: 150;
+  font-size: 30px;
+  Text-align: left;
+  color: #2F4F4F;
+} 
+
+ul {
+  font-family: "Gill Sans", sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul > li{
+   float: left;
+   display: inline-block;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 4px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+
+li a:hover {
+  color: white;
+  background-color: #155486;
+}
+
+.flex {
+  display: flex;
+  margin-left: 25px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+main {
+    Position: relative;
+    margin: auto;
+    Font-size: 20px;
+}
