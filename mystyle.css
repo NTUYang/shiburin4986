@@ -1,6 +1,8 @@
 @media (prefers-color-scheme:light){
   :root{
-     background:#fff;
+     height: 100vh;
+     background: white;
+     background: linear-gradient(white, #D3D3D3);
      color:#1b1b1b;
 
      --text-primary: black;
@@ -10,7 +12,9 @@
 }
 @media (prefers-color-scheme:dark){
   :root{
-     background:#1b1b1b;
+     height: 100vh;
+     background: black;
+     background: linear-gradient(black, #2F2F2F);
      color:#fff;
 
      --text-primary: white;
