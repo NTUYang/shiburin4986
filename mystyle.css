@@ -4,7 +4,7 @@ body {
 
 h1 {
   font-family: "Arial", serif;
-  font-weight: 150;
+  font-weight: 400;
   font-size: 30px;
   Text-align: left;
   color: #2F4F4F;
@@ -46,7 +46,7 @@ li a:hover {
   display: flex;
   margin-left: 25px;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 main {
