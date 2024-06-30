@@ -1,13 +1,28 @@
-body {
-  background-color: #cae6f1;
-}
+@media (prefers-color-scheme:light){
+  :root{
+     background:#fff;
+     color:#1b1b1b;
 
+     --text-primary: black;
+     --text-secondary: white;
+     --background-secondary: #155486;
+  }
+}
+@media (prefers-color-scheme:dark){
+  :root{
+     background:#1b1b1b;
+     color:#fff;
+
+     --text-primary: white;
+     --text-secondary: black;
+     --background-secondary: #BDE2FF;
+  }
+}
 h1 {
   font-family: "Arial", serif;
   font-weight: 400;
   font-size: 30px;
   Text-align: left;
-  color: #2F4F4F;
 } 
 
 ul {
@@ -25,11 +40,12 @@ ul > li{
 
 li a {
   display: block;
-  color: black;
+  color:var(--text-primary);
   text-align: center;
   padding: 4px 16px;
   text-decoration: none;
   font-size: 20px;
+  border-radius: 5px;
 }
 
 a {
@@ -38,8 +54,8 @@ a {
 }
 
 li a:hover {
-  color: white;
-  background-color: #155486;
+  color:var(--text-secondary);
+  background:var(--background-secondary);
 }
 
 .flex {
