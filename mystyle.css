@@ -51,6 +51,6 @@ li a:hover {
 
 main {
     Position: relative;
-    margin: auto;
+    margin-left: 25px;
     Font-size: 20px;
 }
