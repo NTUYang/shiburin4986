@@ -2,25 +2,149 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://ntuyang.github.io/shiburin4986/mystyle.css">
-</head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
+
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("topnav");
+
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } 
+  else { x.className = "navbar"; }
+}
+</script>
+  
+</head>
+  
 <body>
+
 
 <header class="flex">
   <h1 id="header"> Personal Website </h1>
-  <ul>
-     <li><a href="#Home">Home</a></li>
-     <li><a href="#Publications"> Publications </a></li>
-     <li><a href="#Notes">Notes</a></li>
-     <li><a href="#About">About</a></li>
-  </ul>
+  <div class="navbar" id="topnav">
+      <div class="dropdown">
+        <a href="#"> About </a>
+        <a href="#"> Research </a>
+        <a href="#"> Notes </a>
+      </div>
+      <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()"> &#9776; </a>
+  </div>
 </header>
 
-<main class="flex">
-This site is still under construction
+<main>
+<hr>
+<div class="container flex-direction">
+ <div>
+ Hello, I am PhD student starting this summer
+ <br> 
+ My research interest lies in PDE
+ <br> 
+ Currently I am learning harmonic analysis to prepare for my research in PDE
+ </div>
+
+ <div>
+  <center style="font-size:16px">
+  <br>
+  <span> Sheng-Hao Yang </span>
+ 
+  <div class="contact">
+  <center>
+   Contact Info:
+   <a onclick="javascript: window.location.href='mailto:mail@example.org';");">
+    <i class="fa-regular fa-envelope"></i>
+   </a>
+
+   <a onclick="javascript: window.location.href='https://math.stackexchange.com/users/262545/math-the-novice?tab=summary';");">
+     <i class="fa-brands fa-stack-exchange"></i>
+   </a>
+
+   <a onclick="javascript: window.location.href='mailto:mail@example.org';");">
+      <i class="fa-brands fa-discord"></i>
+   </a>
+   </center>
+   </div>
+   Room 405-4
+   <br> 
+   Cosmology Building, NTU
+   </center>
+ </div>
+
+</div>
+
+
+<h2> Education <span style="font-size: 20px;">&</span> Employment</h2>
+<hr style="margin: 0px;">
+<ul class="edulist">
+  <li>
+    <ul class="item1">
+       <li> <b> Research Assistant </b> </li>
+
+       <li> <span style="font-size: 15px;"> National Center for Theoretical Science, Taipei, Taiwan (Apr 2023 - Jul 2024) </span> 
+       </li>
+
+    </ul>
+
+    <ul class="item1">
+       <li> <b> Teaching Assistant </b> </li>
+
+       <li> <span style="font-size: 15px;"> National Taiwan University (Sep 2020 - Aug 2022) </span> 
+       </li>
+       
+       <li> <span style="font-size: 15px;"> MATH 4006 4008 (Calculus I II for Department of Electrical Engineering) </span> </div> 
+       </li>
+    </ul>
+  </li>
+</ul>
+
+<hr style="margin: 0px;">
+  <ul class="edulist">
+  <li>
+    <ul class="item1">
+       <li> <b>M.Sc.</b> in Mathematics </li>
+
+       <li> <span style="font-size: 15px;"> National Taiwan University, Taipei, Taiwan (Sep 2020 - Aug 2022) </span> 
+       </li>
+    </ul>
+  </li>
+
+  <li>
+    <ul class="item1">
+       <li> 
+       <b>B.Sc.</b> in Material Science & Engineering <span style="font-size: 15px;">(Double Major in Mathematics)</span>
+       </li>
+
+       <li> <span style="font-size: 15px;">National Taiwan University, Taipei, Taiwan (Sep 2016 - Jun 2020)</span> 
+       </li>
+    </ul>
+  </li>
+
+  </ul>
+
 </main>
 
+<hr>
+<center>
+&copy Copyright 2024 Hosted by GitHub Pages
+</center>
+
 </body>
+
 </html>
