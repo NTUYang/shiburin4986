@@ -1,8 +1,7 @@
 @media (prefers-color-scheme:light){
   :root{
      height: 100vh;
-     background: white;
-     background: linear-gradient(white, #D3D3D3);
+     background: linear-gradient(white, #D3D3D3) fixed;
      color:#1b1b1b;
 
      --text-primary: black;
@@ -13,8 +12,7 @@
 @media (prefers-color-scheme:dark){
   :root{
      height: 100vh;
-     background: black;
-     background: linear-gradient(black, #2F2F2F);
+     background: linear-gradient(black, #3F3F3F) fixed;
      color:#fff;
 
      --text-primary: white;
@@ -22,55 +20,132 @@
      --background-secondary: #BDE2FF;
   }
 }
-h1 {
+
+
+
+h1, h2{
   font-family: "Arial", serif;
   font-weight: 400;
-  font-size: 30px;
-  Text-align: left;
+  Font-size: 30px;
+  text-align: left;
 } 
 
-ul {
-  font-family: "Gill Sans", sans-serif;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+h2 {
+  Font-size: 24px;
+  margin-bottom: 5px;
 }
 
-ul > li{
-   float: left;
-   display: inline-block;
-}
 
-li a {
-  display: block;
+.navbar a {
+  display: inline-block;
+  border: 1px groove var(--text-primary);
   color:var(--text-primary);
   text-align: center;
-  padding: 4px 16px;
-  text-decoration: none;
+  padding: 4px 12px;
+  font-family: "Gill Sans", sans-serif;
+  Text-decoration: none;
   font-size: 20px;
   border-radius: 5px;
 }
 
-a {
-  display: block;
-  padding: 8px;
+.navbar .icon {
+    display:none;
 }
 
-li a:hover {
+.navbar a:hover {
   color:var(--text-secondary);
   background:var(--background-secondary);
 }
 
+@media screen and (max-width: 670px) {
+  .navbar a{
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .navbar.responsive .icon {
+    position: relative;
+    z-index:1111;
+    }
+
+  .navbar.responsive .dropdown {position: absolute; margin-top: 35px; right:30px;}
+  .navbar.responsive .dropdown a {
+    position: relative;
+    border: 1px groove var(--text-primary);
+    display: block;
+    text-align: left;
+    z-index: 1111;
+    background: var(--text-secondary);    
+  }
+
+  .navbar.responsive .dropdown a:hover {
+    color:var(--text-secondary);
+    background:var(--background-secondary);
+  }
+
+  .flex-direction{
+  flex-direction:column;
+  }
+}
+
+
 .flex {
   display: flex;
   margin-left: 25px;
-  justify-content: space-between;
   align-items: center;
+  Justify-content: space-between;
+  margin-right: 25px;
 }
 
 main {
     Position: relative;
     margin-left: 25px;
+    margin-right: 25px;
     Font-size: 20px;
+    font-family: "Arial", serif;
+}
+
+.container{
+  display:flex;
+  Justify-content: space-between;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.flex-direction{
+  flex-direction:row;
+}
+
+
+.edulist {
+  list-style-type:none; 
+  margin:10px; 
+  padding: 0px 5px;
+  font-size:18px;
+}
+
+
+.edulist ul.item1 {
+  list-style-type:none;
+  Margin-bottom: 5px;
+  Padding: 0px 20px;
+}
+
+.edulist ul.item1 li:not(:first-child) {
+  filter:  opacity(0.7);
+}
+
+.contact { 
+  Font-size:16px;
+  Margin: 5px;
+}
+.contact a{
+ display: inline-block;
+ Padding:0px 2px;
+}
+.contact a:hover{
+  color:var(--background-secondary);
 }
